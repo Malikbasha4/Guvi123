@@ -13,13 +13,15 @@ const App = () => {
     setLoggedIn(true);
   };
 
-  // You may need to fetch user details from a server upon login
-  // For simplicity, assume some initial user details
-  const initialUserDetails = {
-    userName: 'John Doe',
-    email: 'john.doe@example.com',
-    // Add other details like age, gender, dob, mobile, etc.
-  };
+ const initialUserDetails = {
+  userName: 'John Doe',
+  email: 'john.doe@example.com',
+  age: 25,
+  gender: 'Male',
+  dob: '1997-05-15', // Assuming date of birth in YYYY-MM-DD format
+  mobile: '123-456-7890',
+  // Add any other details you need
+};
 
   return (
     <Router>
