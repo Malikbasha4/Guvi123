@@ -27,7 +27,33 @@ const ProfilePage = ({ initialUserDetails }) => {
           onChange={(e) => setUserDetails({ ...userDetails, email: e.target.value })}
         />
 
-        {/* Add more input fields for other details like age, gender, dob, mobile, etc. */}
+        <label>Age:</label>
+        <input
+          type="text"
+          value={userDetails.age}
+          onChange={(e) => setUserDetails({ ...userDetails, age: e.target.value })}
+        />
+
+        <label>Gender:</label>
+        <input
+          type="text"
+          value={userDetails.gender}
+          onChange={(e) => setUserDetails({ ...userDetails, gender: e.target.value })}
+        />
+
+        <label>Date of Birth:</label>
+        <input
+          type="text"
+          value={userDetails.dob}
+          onChange={(e) => setUserDetails({ ...userDetails, dob: e.target.value })}
+        />
+
+        <label>Mobile:</label>
+        <input
+          type="text"
+          value={userDetails.mobile}
+          onChange={(e) => setUserDetails({ ...userDetails, mobile: e.target.value })}
+        />
 
         <button type="button" onClick={handleUpdateDetails}>
           Update Details
